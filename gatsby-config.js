@@ -7,14 +7,14 @@ module.exports = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-minimal-blog/gatsby-config.js
-    siteTitle: `Minimal Blog`,
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
-    siteHeadline: `Minimal Blog - Gatsby Theme from @lekoarts`,
-    siteUrl: `https://minimal-blog.lekoarts.de`,
-    siteDescription: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and line highlighting.`,
-    siteLanguage: `en`,
+    siteTitle: `November11 Tech Blog`,
+    siteTitleAlt: `November11 Tech Blog`,
+    siteHeadline: `November11 Tech Blog`,
+    siteUrl: `https://november11techblog.gatsbyjs.io/`,
+    siteDescription: `November11 Tech Blog`,
+    siteLanguage: `ko`,
     siteImage: `/banner.jpg`,
-    author: `@lekoarts_de`,
+    author: `@november11`,
   },
   plugins: [
     {
@@ -25,23 +25,7 @@ module.exports = {
           {
             title: `Blog`,
             slug: `/blog`,
-          },
-          {
-            title: `About`,
-            slug: `/about`,
-          },
-        ],
-        externalLinks: [
-          {
-            name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
-          },
-          {
-            name: `Homepage`,
-            url: `https://www.lekoarts.de?utm_source=minimal-blog&utm_medium=Starter`,
-          },
-        ],
-      },
+          }]},
     },
     {
       resolve: `gatsby-omni-font-loader`,
