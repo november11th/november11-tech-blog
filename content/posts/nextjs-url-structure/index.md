@@ -5,6 +5,7 @@ tags:
 - React
 - Next.js
 - URL
+- SEO
 ---
 
 >
