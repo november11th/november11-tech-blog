@@ -15,15 +15,46 @@ tags:
 ### Static Site Generation (SSG)
 
 SSG는 빌드 단계에서 HTML 파일을 생성한다. Static Site Generation은 리액트 코드를 미리 렌더링 된 HTML 페이지로 만들기 때문에 성능이 좋고 검색엔진 최적화(SEO)에 적합하다(e.g. 블로그 게시물). 
- 
+
+```typescript
+import { GetStaticProps } from 'next'
+
+export const getStaticProps: GetStaticProps = async (context) => {
+  return {
+    props: {}, // will be passed to the page component as props
+  }
+}
+```
 
 ### Server-Side Rendering (SSR)
 
 SSG와 같이 SSR도 클라이언트 브라우저에 응답하기 전에 미리 렌더링 되기 때문에 SEO에 적합하다. 빌드 시간에 미리 렌더링 하는 SSG와는 다르게 SSR은 리액트 코드를 요청 시간에 HTML로 렌더링 한다. 따라서 SSR은 매우 동적인 페이지에 적합하다(e.g. 뉴스 피드). 
 
+```typescript
+import { GetServerSideProps } from 'next'
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  return {
+    props: {}, // will be passed to the page component as props
+  }
+}
+```
+
 ### Incremental Static Regeneration (ISR)
 
 페이지 개수가 많다면 빌드 과정에서 SSG로 모두 생성하기 어렵다. ISR을 사용하면 빌드 이후 시점에서 정적 페이지를 생성하거나 수정할 수 있다. ISR을 사용하면 개발자나 콘텐츠 편집자가 전체 사이트를 빌드하지 않고 페이지 단위로 정적인 HTML 파일을 생성할 수 있다. 이를 통해 수백만 개의 페이지를 정적으로 관리할 수 있다.  
+
+```typescript
+import { GetStaticPaths } from 'next'
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  return {
+    paths: [
+      {params: {...}} // See the "paths" section below
+    ],
+    fallback: true, false or "blocking" // See the "fallback" section below
+  };
+}
+```
 
 ### Client Side Rendering (CSR)
 
