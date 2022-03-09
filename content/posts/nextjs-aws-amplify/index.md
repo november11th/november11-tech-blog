@@ -27,3 +27,13 @@ tags:
           - key: Cache-Control
             value: 'max-age=604800, s-maxage=86400' 
      ```
+
+#### 참고 자료
+> Managing app performance<br />
+> https://docs.aws.amazon.com/ko_kr/amplify/latest/userguide/ttl.html
+
+
+> CloudFront에서 객체를 캐싱하는 시간 지정<br />
+> https://docs.aws.amazon.com/ko_kr/AmazonCloudFront/latest/DeveloperGuide/Expiration.html
+
+
