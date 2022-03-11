@@ -12,6 +12,10 @@ tags:
 
 1. Amplify 콘솔에서 성능 모드(Performance mode) 활성화
    - `앱설정` -> `일반` -> `브랜치` 섹션에서 설정할 수 있다. 
+   - 성능 모드를 활성화하면 s-maxage의 기본 값이 600초(10분)으로 지정된다.
+     `cache-control: public, max-age=0, immutable, s-maxage=600`
+     성능 모드 비활성화 상태에서의 s-maxage 기본 값은 2초다. 
+     `cache-control: public, max-age=0, immutable, s-maxage=2`
 
 2. 커스텀 헤더로 리소스 별 캐시 기간을 설정한다.
    - `앱 설정` -> `사용자 지정헤더` 에서 설정할 수 있다.
