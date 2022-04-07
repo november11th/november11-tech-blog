@@ -19,7 +19,6 @@ tags:
 503 ERROR 
 The request could not be satisfied
 ```
-- 
 
 ### 해결 방법
 - Lambda@Edge에 구축된 Default Lambda 함수에 할당된 IAM role에 SQS 송신 권한을 추가해야 한다.  
@@ -27,10 +26,10 @@ The request could not be satisfied
   
 ```typescript
 {
-            "Effect": "Allow",
-            "Resource": "arn:aws:sqs:us-east-1:<ACCOUND-ID>:<SQS-ID>.fifo",
-            "Action": [
-                "sqs:SendMessage"
-            ]
-        }
+    "Effect": "Allow",
+    "Resource": "arn:aws:sqs:us-east-1:<ACCOUND-ID>:<SQS-ID>.fifo",
+    "Action": [
+        "sqs:SendMessage"
+    ]
+}
 ```
