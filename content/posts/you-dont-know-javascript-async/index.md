@@ -5,6 +5,20 @@ tags:
 - TIL
 - javascript
 ---
+### 22-05-08
+
+- Countless : 무수한 
+> Countless JS programs,
+
+- workhorse : 열심히 일하는 사람 (일개미)
+> The callback function is the async workhorse for JavaScript,
+
+- continuation : 연속성
+
+- deficient : 부족한 
+>  both versions are deficient in explaining this code
+
+---
 ### 22-05-07
 
 - hog : 돼지, 독차지하다. 
