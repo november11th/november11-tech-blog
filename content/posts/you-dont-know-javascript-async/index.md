@@ -5,6 +5,18 @@ tags:
 - TIL
 - javascript
 ---
+### 22-05-11
+
+- evident : 분명한, 눈에 띄는
+> there’s something deeper wrong, which isn’t evident just in that code example.
+
+- wreak : 큰 피해를 가하다
+- havoc : 대파괴, 대혼란
+> there’s still one more hazard that could wreak havoc. Can you spot what it is?
+
+- errands : 심부름
+
+---
 ### 22-05-08
 
 - Countless : 무수한 
