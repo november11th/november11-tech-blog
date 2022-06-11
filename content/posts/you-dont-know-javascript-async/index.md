@@ -5,6 +5,19 @@ tags:
 - TIL
 - javascript
 ---
+### 22-05-12
+
+- Promise.resolve를 사용하면 즉시값을 전달할 수 있다. 
+```typescript
+var p1 = new Promise( function(resolve,reject){
+    resolve( 42 );
+} );
+
+var p2 = Promise.resolve( 42 );
+```
+
+
+---
 ### 22-05-11
 
 - evident : 분명한, 눈에 띄는
